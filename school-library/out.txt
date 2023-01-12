@@ -1,0 +1,33 @@
+devasc@labvm:~$ curl -X GET "http://library.demo.local/api/v1/books" -H "accept: 
+> application/json"
+[
+    {
+        "id": 0,
+        "title": "IP Routing Fundamentals",
+        "author": "Mark A. Sportack"
+    },
+    {
+        "id": 1,
+        "title": "Python for Dummies",
+        "author": "Stef Maruch Aahz Maruch"
+    },
+    {
+        "id": 2,
+        "title": "Linux for Networkers",
+        "author": "Cisco Systems Inc."
+    },
+    {
+        "id": 3,
+        "title": "NetAcad: 20 Years Of Online-Learning",
+        "author": "Cisco Systems Inc."
+    }
+]
+
+ access-control-allow-origin: http://library.demo.local 
+ content-length: 93 
+ content-type: application/json 
+ date: Wed, 11 Jan 2023 23:38:26 GMT 
+ server: Werkzeug/0.14.1 Python/3.8.2 
+ vary: Origin 
+ 
+ 
