@@ -25,7 +25,7 @@ def addBook(book, apiKey):
         f"{APIHOST}/api/v1/books", 
         headers = {
             "Content-type": "application/json",
-            "X-API-Key": apiKey
+            "X-API-Key": "cisco|OuhYnSfe68jYjuZw7x-G7BLZWhthOzDvWwIX1zP2OqA"
             },
         data = json.dumps(book)
     )
@@ -43,6 +43,7 @@ for i in range(4, 105):
     fakeTitle = fake.catch_phrase()
     fakeAuthor = fake.name()
     fakeISBN = fake.isbn13()
+    console.log(f"Adding book {fakeTitle} by {fakeAuthor} with ISBN {fakeISBN}")
     book = {"id":i, "title": fakeTitle, "author": fakeAuthor, "isbn": fakeISBN}
     # add the new random "fake" book using the API
     addBook(book, apiKey) 
